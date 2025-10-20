@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Т-Банк — Главная</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="device">
+    <div class="status-bar">
+      <span class="time">9:41</span>
+      <div class="status-icons">
+        <span class="icon signal"></span>
+        <span class="icon wifi"></span>
+        <span class="icon battery">
+          <span class="battery-level"></span>
+        </span>
+      </div>
+    </div>
+    <header class="header">
+      <div class="logo">Т-БАНК</div>
+      <button class="profile" type="button">
+        <span class="avatar">М</span>
+        <span class="name">Михаил</span>
+        <span class="chevron"></span>
+      </button>
+      <button class="gift" type="button">
+        <span class="gift-icon"></span>
+      </button>
+    </header>
+    <div class="search">
+      <span class="search-icon"></span>
+      <input type="text" placeholder="Поиск" readonly />
+    </div>
+    <section class="cards primary">
+      <article class="card highlight blue">
+        <div class="badge badge-yellow">Подстроимся под вас</div>
+        <p class="card-text">Расскажите, как пользоваться приложением удобнее именно вам</p>
+      </article>
+      <article class="card highlight pink">
+        <div class="badge badge-blue">Читайте Т-Блог в Пульсе</div>
+        <p class="card-text">Подборка лучших материалов по финансам и карьере</p>
+      </article>
+    </section>
+    <section class="cards secondary">
+      <article class="card small">
+        <div class="icon-circle yellow"></div>
+        <p>Palmira Business Club</p>
+      </article>
+      <article class="card small">
+        <div class="icon-circle gray"></div>
+        <p>Откуда за монетой</p>
+      </article>
+    </section>
+    <section class="operations">
+      <article class="operations-card">
+        <div class="op-icon ops-all"></div>
+        <div class="op-info">
+          <span class="op-title">Все операции</span>
+          <span class="op-subtitle">Нет трат в апреле</span>
+        </div>
+      </article>
+      <article class="operations-card">
+        <div class="op-icon ops-cashback"></div>
+        <div class="op-info">
+          <span class="op-title">Кэшбэк и бонусы</span>
+          <span class="op-subtitle">0 ₽</span>
+        </div>
+      </article>
+    </section>
+    <section class="account">
+      <div class="account-card">
+        <div class="account-header">
+          <div>
+            <span class="account-balance">0 ₽</span>
+            <span class="account-name">Black</span>
+          </div>
+          <div class="card-chip">7672</div>
+        </div>
+        <button class="delivery" type="button">Оформите доставку</button>
+      </div>
+    </section>
+    <section class="actions">
+      <button class="action-button primary" type="button">Взять деньги</button>
+      <button class="action-button" type="button">Копить</button>
+    </section>
+    <nav class="tabbar">
+      <a class="tab active" href="#">
+        <span class="tab-icon home"></span>
+        <span class="tab-label">Главная</span>
+      </a>
+      <a class="tab" href="#">
+        <span class="tab-icon payments"></span>
+        <span class="tab-label">Платежи</span>
+      </a>
+      <a class="tab" href="#">
+        <span class="tab-icon city"></span>
+        <span class="tab-label">Город</span>
+      </a>
+      <a class="tab" href="#">
+        <span class="tab-icon market"></span>
+        <span class="tab-label">Вклады</span>
+      </a>
+      <a class="tab" href="#">
+        <span class="tab-icon shop"></span>
+        <span class="tab-label">Витрина</span>
+      </a>
+    </nav>
+  </div>
+</body>
+</html>
