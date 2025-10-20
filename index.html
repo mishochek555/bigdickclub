@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Т-Банк — Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="viewport">
+      <div class="phone-frame" role="presentation">
+        <div class="dynamic-island" aria-hidden="true">
+          <span class="camera"></span>
+        </div>
+        <div class="device-shade" aria-hidden="true"></div>
+        <div class="app">
+          <div class="status-bar" aria-label="Статус устройства">
+            <span class="status-time" aria-hidden="true">9:41</span>
+            <div class="status-icons" aria-hidden="true">
+              <span class="status-icon status-signal"></span>
+              <span class="status-icon status-wifi"></span>
+              <span class="status-icon status-battery">
+                <span class="status-battery-level"></span>
+              </span>
+            </div>
+          </div>
+
+          <header class="app-header">
+            <div class="logo" aria-label="Т-Банк">Т-Банк</div>
+            <button class="profile" type="button" aria-label="Профиль Михаил">
+              <span class="profile-avatar" aria-hidden="true">М</span>
+              <span class="profile-name">Михаил</span>
+              <span class="profile-chevron" aria-hidden="true"></span>
+            </button>
+            <button class="gift" type="button" aria-label="Подарки и акции">
+              <span class="gift-icon" aria-hidden="true"></span>
+            </button>
+          </header>
+
+          <div class="search" role="search">
+            <span class="search-icon" aria-hidden="true"></span>
+            <input type="text" placeholder="Поиск" aria-label="Поиск" readonly />
+          </div>
+
+          <main class="content" aria-label="Главная страница">
+            <section class="recommendations" aria-label="Рекомендации">
+              <article class="recommendation-card card-yellow">
+                <span class="card-badge badge-blue">Подстроимся под вас</span>
+                <p class="card-title">
+                  Расскажите, как пользоваться приложением удобнее именно вам
+                </p>
+              </article>
+              <article class="recommendation-card card-magenta">
+                <span class="card-badge badge-gold">Читайте Т-Блог в Пульсе</span>
+                <p class="card-title">
+                  Подборка лучших материалов по финансам и карьере
+                </p>
+              </article>
+              <article class="recommendation-card card-dark">
+                <span class="card-badge badge-lime">Новый дизайн приложения</span>
+                <p class="card-title">
+                  Поделитесь впечатлением и предложите улучшения
+                </p>
+              </article>
+            </section>
+
+            <section class="events" aria-label="События рядом">
+              <h2 class="section-heading">Что рядом</h2>
+              <div class="event-list">
+                <article class="event-card">
+                  <span class="event-icon event-palmira" aria-hidden="true"></span>
+                  <div class="event-info">
+                    <p class="event-title">Palmira Business Club</p>
+                    <p class="event-distance">600 м от вас</p>
+                  </div>
+                </article>
+                <article class="event-card">
+                  <span class="event-icon event-quest" aria-hidden="true"></span>
+                  <div class="event-info">
+                    <p class="event-title">Откуда за монетой</p>
+                    <p class="event-distance">Квест сегодня</p>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section class="operations" aria-label="Управление деньгами">
+              <article class="operation-card">
+                <span class="operation-icon icon-all" aria-hidden="true"></span>
+                <div class="operation-info">
+                  <span class="operation-title">Все операции</span>
+                  <span class="operation-subtitle">Нет трат в апреле</span>
+                </div>
+              </article>
+              <article class="operation-card">
+                <span class="operation-icon icon-cashback" aria-hidden="true"></span>
+                <div class="operation-info">
+                  <span class="operation-title">Кэшбэк и бонусы</span>
+                  <span class="operation-subtitle">0 ₽</span>
+                </div>
+              </article>
+            </section>
+
+            <section class="account" aria-label="Ваш счет">
+              <div class="account-card">
+                <div class="account-header">
+                  <div>
+                    <p class="account-balance">0 ₽</p>
+                    <p class="account-name">Black</p>
+                  </div>
+                  <span class="account-chip" aria-label="Последние цифры карты">7672</span>
+                </div>
+                <button class="account-delivery" type="button">Оформите доставку</button>
+              </div>
+            </section>
+
+            <section class="actions" aria-label="Популярные действия">
+              <button class="action primary" type="button">Взять деньги</button>
+              <button class="action" type="button">Копить</button>
+              <button class="action" type="button">Инвестировать</button>
+            </section>
+          </main>
+
+          <nav class="tab-bar" aria-label="Навигация приложения">
+            <a class="tab active" href="#">
+              <span class="tab-icon icon-home" aria-hidden="true"></span>
+              <span class="tab-label">Главная</span>
+            </a>
+            <a class="tab" href="#">
+              <span class="tab-icon icon-payments" aria-hidden="true"></span>
+              <span class="tab-label">Платежи</span>
+            </a>
+            <a class="tab" href="#">
+              <span class="tab-icon icon-city" aria-hidden="true"></span>
+              <span class="tab-label">Город</span>
+            </a>
+            <a class="tab" href="#">
+              <span class="tab-icon icon-savings" aria-hidden="true"></span>
+              <span class="tab-label">Вклады</span>
+            </a>
+            <a class="tab" href="#">
+              <span class="tab-icon icon-market" aria-hidden="true"></span>
+              <span class="tab-label">Витрина</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
